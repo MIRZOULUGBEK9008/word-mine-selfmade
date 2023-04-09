@@ -185,12 +185,14 @@ img {
 .title {
   margin-top: 0;
   font-size: 3em;
+  font-weight: 400;
   margin-bottom: 0.5em;
 }
 
 .title-extra {
   margin: 0;
   font-size: 2em;
+  font-weight: 400;
 }
 
 .buttons {
