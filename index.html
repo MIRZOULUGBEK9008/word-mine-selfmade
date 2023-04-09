@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name of Project</title>
+  <title>Word mine</title>
+
+  <!-- FAVICON  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- STYLES  -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -13,6 +22,38 @@
 </head>
 <body>
 
+  <!-- LOADER  -->
+  <!-- <div class="loader-wrapper js-loader">
+    <span class="loader"></span>
+  </div> -->
+
+  <!-- SECTION FORM -->
+  <section class="form-wrapper js-form-wrapper">
+    <h2 class="visually-hidden">Sign in</h2>
+    <form class="form js-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__inner">
+        <div class="form__input-label-wrapper">
+          <label class="form__label" for="name">Enter your name</label>
+          <input class="form__input js-input" type="text" name="name" id="name" autofocus required>
+        </div>
+        <button class="sm-button" type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="title-wrapper">
+    <h1 class="title">
+      Hi 👋<br>
+      <i class="js-title"></i>
+    </h1>
+    <h2 class="title-extra">Choose your level</h2>
+  </div>
+
+  <div class="buttons">
+    <button class="buttons__button buttons__button--easy js-button" type="button">Easy</button>
+    <button class="buttons__button buttons__button--medium js-button" type="button">Medium</button>
+    <button class="buttons__button buttons__button--hard js-button" type="button">Hard</button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
